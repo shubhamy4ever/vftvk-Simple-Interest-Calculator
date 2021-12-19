@@ -4,13 +4,35 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+<div class="container">
+
+    <article>
+        
         <h1>Simple Interest Calculator</h1>
+    
+        Amount   <input type="number" min="1000" required="true"  id="amount">   <br> <br>
+            Interest Rate <input type="range" min="0" max="21" id="rate" step="0.5"  onchange="changed()"> <span id="range" >10.50%</span>  <br/> <br>
+            No. of Years <select id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select> <br>
+            
+            <br>
+            <button onclick="compute()" >Compute Interest</button><br><br>
+            <div id="resultdiv">
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
-</html>
+                <p >If you deposit <span id="amounthere" class="bg-yellow"></span><br>
+                    at an interest rate of <span id="ratehere" class="bg-yellow"></span><br>
+                you will recieve an amount of <span id="result" class="bg-yellow"></span><br>
+                in the year <span id="yearhere" class="bg-yellow"></span></p>
+            </div>
+            
+            
+            <footer class="footer">	&copy; Everyone Can Get Rich</footer><br><br>
+        </article>
+    </div>
+        </html>
+        

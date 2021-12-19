@@ -1,4 +1,30 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.container  {
+    background-color: white;
+    width: 900px;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
 
+}
+h1{color:rgb(126, 138, 126); font-size: 40px; font-weight:1000;}
 
+#resultdiv{
+    display: none;
+}
+.bg-yellow{
+    background-color: rgb(216, 216, 21);
+}
+.footer{
+    font-weight: 500;
+    font-size: large;
+}
