@@ -3,6 +3,8 @@ function compute() {
   let resultdiv = document.getElementById("resultdiv");
   if (amount.value <= 0) {
     alert("please enter a positive number");
+    amount.focus();
+
   } else {
     resultdiv.style.display = "block";
     let slider = document.getElementById("rate");
